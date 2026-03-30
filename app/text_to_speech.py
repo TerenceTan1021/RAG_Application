@@ -3,7 +3,6 @@ import pyttsx3
 import tempfile
 import os
 from gtts import gTTS
-import playsound
 import threading
 
 class TextToSpeech:
@@ -22,7 +21,6 @@ class TextToSpeech:
                 with tempfile.NamedTemporaryFile(delete=False, suffix='.mp3') as fp:
                     temp_file = fp.name
                     tts.save(temp_file)
-                    playsound.playsound(temp_file)
                     os.unlink(temp_file)
             except Exception as e:
                 print(f"Error in TTS: {e}")

@@ -1,8 +1,8 @@
 # app/rag_engine.py
 from langchain.chat_models import ChatOpenAI
-from langchain.prompts import ChatPromptTemplate
-from langchain.schema import StrOutputParser
-from langchain.schema.runnable import RunnablePassthrough
+from langchain_openai import ChatOpenAI
+from langchain_core.output_parsers import StrOutputParser
+from langchain_core.output_parsers import StrOutputParser
 import os
 from typing import List, Dict
 import openai
