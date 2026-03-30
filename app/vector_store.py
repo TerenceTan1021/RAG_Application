@@ -1,6 +1,6 @@
 # app/vector_store.py
-from langchain.embeddings import HuggingFaceEmbeddings
-from langchain.vectorstores import Chroma
+from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_community.vectorstores import Chroma
 from typing import List, Optional
 import os
 import shutil
