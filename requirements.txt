@@ -3,6 +3,7 @@
 pdfplumber
 streamlit
 langchain
+langchain-openai
 langchain-text-splitters
 langchain-community
 langchain-core
